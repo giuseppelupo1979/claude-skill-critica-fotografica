@@ -1,6 +1,6 @@
-# Critica fotografica
+# Critica fotografica per ChatGPT
 
-Una **Agent Skill** portabile per Claude e ChatGPT che produce su una fotografia una lettura critica strutturata: tecnica, geometrica, compositiva, narrativa, artistica e poetica. Con riferimenti motivati ai fotografi del Novecento, un piano di post produzione operativo e indicazioni concrete per lo scatto successivo.
+Un protocollo di istruzioni per un GPT personalizzato in ChatGPT, che produce su una fotografia una lettura critica strutturata: tecnica, geometrica, compositiva, narrativa, artistica e poetica. Con riferimenti motivati ai fotografi del Novecento, un piano di post produzione operativo e indicazioni concrete per lo scatto successivo.
 
 Non è un generatore di complimenti, non è un ripasso della regola dei terzi, non è una lista di cursori da spostare. È una diagnosi ancorata a ciò che si vede davvero nell'immagine, che distingue quello che osserva da quello che deduce, e che dichiara esplicitamente quando il dato non c'è.
 
@@ -65,37 +65,21 @@ Una critica fotografica generata da un modello linguistico fallisce quasi sempre
 
 L'interlocutore previsto è un fotografo avanzato. La skill dà del tu e tratta da pari.
 
-## Installazione
+## Configurazione in ChatGPT
 
-Servono i tre file della cartella [`critica-fotografica/`](critica-fotografica/), con quella struttura di directory.
+Questa versione è pensata prima di tutto per un **GPT personalizzato in ChatGPT**. ChatGPT non carica automaticamente un file `SKILL.md` da un repository: usa invece le sue **Istruzioni** e i file di **Conoscenza**.
 
-### Claude Code
+1. Apri [l’editor dei GPT](https://chatgpt.com/gpts/editor) sul web e crea un GPT.
+2. Nella scheda **Configura**, incolla nelle **Istruzioni** il contenuto di `critica-fotografica/SKILL.md`, escluso il frontmatter YAML iniziale.
+3. Carica come **Conoscenza** `critica-fotografica/references/canone.md` e `critica-fotografica/references/postproduzione.md`.
+4. Aggiungi come prompt iniziali alcuni esempi da [examples/USAGE.md](examples/USAGE.md).
+5. Salva e prova il GPT allegando una fotografia.
 
-Copia la cartella nella directory delle skill personali:
+Per una critica puntuale delle immagini abilita la capacità di analisi delle immagini disponibile nel tuo piano. Le funzionalità per creare o modificare GPT dipendono dal piano e dalle autorizzazioni dell’area di lavoro.
 
-```bash
-cp -R critica-fotografica ~/.claude/skills/
-```
+### Compatibilità Claude
 
-Oppure, per renderla disponibile solo in un progetto specifico:
-
-```bash
-cp -R critica-fotografica .claude/skills/
-```
-
-Riavvia Claude Code. La skill compare tra quelle disponibili e si attiva da sola quando carichi una fotografia e chiedi un parere.
-
-### App Claude (desktop e web)
-
-Comprimi la cartella e caricala dalle impostazioni, nella sezione dedicata alle Skill (Settings → Capabilities → Skills):
-
-```bash
-zip -r critica-fotografica.zip critica-fotografica
-```
-
-### Verifica
-
-Carica una foto e scrivi semplicemente `che ne pensi di questo scatto?`. Se la skill è attiva, la risposta si apre dichiarando la modalità usata (`completa`, di norma) e segue lo schema a tredici sezioni.
+La stessa struttura rimane compatibile con Claude: copia la cartella `critica-fotografica/` nella directory delle skill prevista dal tuo ambiente Claude.
 
 ## Uso
 
@@ -371,7 +355,7 @@ Sono nella skill come riferimento operativo, e chiariscono il livello richiesto 
 
 ## Esempi d’uso
 
-Prompt pronti per critica completa, parere rapido, post-produzione, ritaglio, selezione di portfolio e stampa sono disponibili in [examples/USAGE.md](examples/USAGE.md).
+Prompt pronti per ChatGPT, per critica completa, parere rapido, post-produzione, ritaglio, selezione di portfolio e stampa, sono disponibili in [examples/USAGE.md](examples/USAGE.md).
 
 ## Struttura del repository
 
