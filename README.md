@@ -1,6 +1,6 @@
 # Critica fotografica
 
-Una **Agent Skill** per Claude che produce su una fotografia una lettura critica strutturata: tecnica, geometrica, compositiva, narrativa, artistica e poetica. Con riferimenti motivati ai fotografi del Novecento, un piano di post produzione operativo e indicazioni concrete per lo scatto successivo.
+Una **Agent Skill** portabile per Claude e ChatGPT che produce su una fotografia una lettura critica strutturata: tecnica, geometrica, compositiva, narrativa, artistica e poetica. Con riferimenti motivati ai fotografi del Novecento, un piano di post produzione operativo e indicazioni concrete per lo scatto successivo.
 
 Non è un generatore di complimenti, non è un ripasso della regola dei terzi, non è una lista di cursori da spostare. È una diagnosi ancorata a ciò che si vede davvero nell'immagine, che distingue quello che osserva da quello che deduce, e che dichiara esplicitamente quando il dato non c'è.
 
@@ -369,6 +369,10 @@ Sono nella skill come riferimento operativo, e chiariscono il livello richiesto 
 >
 > **Da produrre:** "Il problema è lo stesso di Kertész a Meudon: due eventi su piani diversi che devono coincidere. Qui il secondo evento (l'uomo sullo sfondo) arriva mezzo secondo tardi e resta illeggibile."
 
+## Esempi d’uso
+
+Prompt pronti per critica completa, parere rapido, post-produzione, ritaglio, selezione di portfolio e stampa sono disponibili in [examples/USAGE.md](examples/USAGE.md).
+
 ## Struttura del repository
 
 ```
@@ -413,3 +417,8 @@ Non serve trovare per forza un difetto: davanti a una fotografia eccellente, l'e
 [MIT](LICENSE).
 
 I nomi dei fotografi citati in `references/canone.md` compaiono a fini di analisi critica e didattica. Nessuna opera è riprodotta in questo repository.
+
+
+## Attribuzione
+
+Skill ideata e attribuita esclusivamente a **Giuseppe Lupo**.
