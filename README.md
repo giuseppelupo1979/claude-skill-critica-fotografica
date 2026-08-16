@@ -1,6 +1,6 @@
 # Critica fotografica per ChatGPT
 
-Un protocollo di istruzioni per un GPT personalizzato in ChatGPT, che produce su una fotografia una lettura critica strutturata: tecnica, geometrica, compositiva, narrativa, artistica e poetica. Con riferimenti motivati ai fotografi del Novecento, un piano di post produzione operativo e indicazioni concrete per lo scatto successivo.
+Un protocollo di istruzioni per un GPT personalizzato per ChatGPT e CLAUDE, che produce su una fotografia una lettura critica strutturata: tecnica, geometrica, compositiva, narrativa, artistica e poetica. Con riferimenti motivati ai fotografi del Novecento, un piano di post produzione operativo e indicazioni concrete per lo scatto successivo.
 
 Non è un generatore di complimenti, non è un ripasso della regola dei terzi, non è una lista di cursori da spostare. È una diagnosi ancorata a ciò che si vede davvero nell'immagine, che distingue quello che osserva da quello che deduce, e che dichiara esplicitamente quando il dato non c'è.
 
