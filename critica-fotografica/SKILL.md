@@ -1,6 +1,6 @@
 ---
 name: critica-fotografica
-description: Analizza, valuta e commenta fotografie con una scheda critica profonda (tecnica, geometrica, compositiva, narrativa, artistica e poetica), riferimenti motivati ai fotografi del Novecento, piano di post produzione operativo e indicazioni di pre scatto. Usa questa skill ogni volta che l'utente carica una o più fotografie e chiede un parere, una critica, una valutazione, un voto, un feedback, una lettura, un editing di serie o una selezione di portfolio, anche quando non nomina esplicitamente la parola critica e anche quando chiede soltanto "che ne pensi di questo scatto". Usala anche per domande su come migliorare uno scatto, come ritagliarlo, come svilupparlo in post produzione o quali immagini tenere in una sequenza.
+description: Analizza, valuta e commenta fotografie con una scheda critica profonda (tecnica, geometrica, compositiva, narrativa, artistica e poetica), riferimenti motivati ai fotografi del Novecento, piano di post produzione operativo e indicazioni di pre scatto. Usa questa skill ogni volta che l'utente carica una o più fotografie e chiede un parere, una critica, una valutazione, un voto, un feedback, una lettura, un editing di serie o una selezione di portfolio, anche quando non nomina esplicitamente la parola critica e anche quando chiede soltanto "che ne pensi di questo scatto". Usala anche per domande su come migliorare uno scatto, come ritagliarlo, come svilupparlo in post produzione o quali immagini tenere in una sequenza. Al termine della scheda propone di esportare l'analisi in un PDF impaginato, salvato nella stessa cartella della fotografia analizzata.
 ---
 
 # Critica fotografica
@@ -291,6 +291,36 @@ vetrina."
 diversi che devono coincidere. Qui il secondo evento (l'uomo sullo sfondo) arriva
 mezzo secondo tardi e resta illeggibile."
 
+## Consegna e proposta di PDF
+
+La scheda si consegna sempre prima nella conversazione, per intero. Il PDF è un
+di più che si offre dopo, non un sostituto della risposta.
+
+**Chiusura obbligatoria.** Dopo l'ultima sezione della scheda (la 13 nella
+modalità completa, l'ultimo punto del format lock nelle altre modalità), aggiungi
+una sola riga, separata dal resto, in cui chiedi se vuoi che la critica venga
+esportata in un PDF impaginato. Una riga, nessun elenco di opzioni, nessuna
+spiegazione di cosa conterrà il PDF. Esempio di registro:
+
+> Vuoi che ti prepari un PDF impaginato con questa scheda?
+
+Non produrre il PDF prima di avere una risposta. Non produrlo mai come iniziativa
+autonoma insieme alla scheda: la domanda serve proprio a non generare file che
+nessuno ha chiesto.
+
+**Se la risposta è sì.** Leggi `references/pdf.md` e segui la ricetta. La regola
+che non si negozia è la destinazione: il PDF va salvato nella stessa posizione del
+file originale che ti è stato sottoposto, con il nome dell'immagine più il
+suffisso `_critica.pdf`. Consegnalo anche nella conversazione, e dichiara in una
+riga dove è stato salvato e quante pagine ha.
+
+**Se la risposta è no, o se non arriva.** Non insistere, non riproporre la domanda
+più avanti nella stessa conversazione, e non lasciare file di lavoro in giro.
+
+**Se l'utente chiede il PDF prima ancora di avere la scheda**, scrivi comunque
+prima la scheda completa nella conversazione, poi esporta senza fare la domanda:
+la risposta l'hai già.
+
 ## File di riferimento
 
 Leggili solo quando servono, non entrambi insieme.
@@ -299,6 +329,7 @@ Leggili solo quando servono, non entrambi insieme.
 |---|---|
 | `references/canone.md` | prima di scrivere la sezione 7, per verificare pertinenza e condizioni di non applicabilità di ogni autore |
 | `references/postproduzione.md` | prima di scrivere la sezione 10, per le strategie condizionali e i parametri di output |
+| `references/pdf.md` | solo dopo che l'utente ha accettato l'esportazione, per la ricetta di impaginazione e la regola di destinazione |
 
 ## Verifica prima di consegnare
 
@@ -312,6 +343,8 @@ Leggili solo quando servono, non entrambi insieme.
 - Nessun autore citato ricade nelle sue condizioni di non applicabilità.
 - Nessuna misura inventata, nessun istogramma simulato.
 - Nessun trattino lungo nel testo.
+- La scheda si chiude con la riga che propone il PDF, e il PDF non è stato
+  generato prima della risposta.
 
 **Criterio di successo:** la scheda funziona se individua almeno un elemento
 visivo non ovvio che modifica o approfondisce la lettura dell'immagine, sia esso

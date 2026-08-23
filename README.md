@@ -24,6 +24,7 @@ Non è un generatore di complimenti, non è un ripasso della regola dei terzi, n
 - [I file di riferimento](#i-file-di-riferimento)
   - [canone.md](#canonemd--il-canone-come-problemi-visivi)
   - [postproduzione.md](#postproduzionemd--strategie-condizionali)
+  - [pdf.md](#pdfmd--esportazione-della-scheda-in-pdf)
 - [Modalità serie e portfolio](#modalità-serie-e-portfolio)
 - [Tono e stile](#tono-e-stile)
 - [Esempi di calibrazione](#esempi-di-calibrazione)
@@ -245,6 +246,10 @@ Un difetto tecnico che serve l'immagine non è un difetto: viene riconosciuto co
 | 12 | **La singola priorità** | una sola cosa, una sola frase. Nessun elenco, nessuna alternativa |
 | 13 | **Esercizio** | un compito pratico e verificabile per la prossima uscita, eseguibile in una sola sessione |
 
+Dopo la sezione 13 la scheda si chiude con una riga che propone l'esportazione in un
+PDF impaginato, salvato nella stessa cartella della fotografia analizzata. I dettagli
+sono in [`pdf.md`](#pdfmd--esportazione-della-scheda-in-pdf).
+
 ### La controanalisi in dettaglio
 
 È la sezione che distingue una critica da un'opinione. Prima del verdetto, la skill deve rispondere a cinque domande:
@@ -282,12 +287,13 @@ Due righe di argomentazione, senza attenuazioni.
 
 ## I file di riferimento
 
-I due file in [`references/`](critica-fotografica/references/) non vengono caricati insieme alla skill: vengono letti solo quando servono, per non occupare contesto inutilmente. È il meccanismo di progressive disclosure delle Agent Skill.
+I tre file in [`references/`](critica-fotografica/references/) non vengono caricati insieme alla skill: vengono letti solo quando servono, per non occupare contesto inutilmente. È il meccanismo di progressive disclosure delle Agent Skill.
 
 | File | Quando viene letto |
 |---|---|
 | [`canone.md`](critica-fotografica/references/canone.md) | prima di scrivere la sezione 7, per verificare pertinenza e condizioni di non applicabilità di ogni autore |
 | [`postproduzione.md`](critica-fotografica/references/postproduzione.md) | prima di scrivere la sezione 10, per le strategie condizionali e i parametri di output |
+| [`pdf.md`](critica-fotografica/references/pdf.md) | solo dopo che l'utente ha accettato l'esportazione, per la ricetta di impaginazione e la regola di destinazione |
 
 ### `canone.md` — il canone come problemi visivi
 
@@ -357,6 +363,26 @@ La sezione 11, *cosa non fare mai*, è la contropartita di tutto il file:
 - convertire in bianco e nero per salvare una fotografia debole;
 - proporre valori come se fossero misurati.
 
+### `pdf.md` — esportazione della scheda in PDF
+
+Dopo l'ultima sezione della scheda, la skill chiude con una riga sola che chiede se
+vuoi il PDF impaginato. Non lo produce mai di iniziativa propria: la domanda serve
+esattamente a non generare file che nessuno ha chiesto.
+
+Se la risposta è sì, viene letto `pdf.md`, che contiene la ricetta di impaginazione
+(copertina con la fotografia, titolo proposto nella sezione 6, dati di ripresa reali,
+tutte le sezioni per intero, da una a tre figure di supporto con didascalia che
+dichiara cosa dimostrano, tabella del calcolo) e una regola di destinazione che non si
+negozia: **il PDF va salvato nella stessa posizione del file originale analizzato**,
+con il nome dell'immagine più il suffisso `_critica.pdf`, senza mai sovrascrivere.
+
+Il file contiene anche il foglio di stile per la stampa, la trappola di impaginazione
+che rende il documento illeggibile se la copertina chiara su fondo scuro non viene
+chiusa prima del corpo, e un controllo di leggibilità obbligatorio prima della
+consegna: si rende in immagine la pagina 2 e una pagina centrale e si misura la
+percentuale di pixel scuri, che su una pagina di testo normale sta fra il 3 e il 13
+per cento.
+
 ## Modalità serie e portfolio
 
 ### Il format lock della modalità serie
@@ -413,7 +439,8 @@ Prompt pronti per ChatGPT, per critica completa, parere rapido, post-produzione,
     ├── SKILL.md                      # istruzioni principali, sempre caricate
     └── references/
         ├── canone.md                 # 44 fotografi come problemi visivi risolti
-        └── postproduzione.md         # strategie condizionali di post produzione
+        ├── postproduzione.md         # strategie condizionali di post produzione
+        └── pdf.md                    # impaginazione ed esportazione della scheda in PDF
 ```
 
 `SKILL.md` si apre con un frontmatter YAML che contiene `name` e `description`. La `description` è il meccanismo di attivazione: elenca esplicitamente i casi d'uso, incluse le richieste che non contengono la parola "critica", perché il modello decide di caricare la skill leggendo quel campo.
