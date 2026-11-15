@@ -1,3 +1,10 @@
+> [!IMPORTANT]
+> **Repository archiviato.** Questa skill è stata sostituita da
+> [`fotografia`](https://github.com/giuseppelupo1979/claude-skill-fotografia), che unisce
+> critica della singola fotografia, confronto fra due ed editing di portfolio in una sola
+> skill, con le misure corrette e il manuale d'uso. Non riceve più aggiornamenti:
+> installa quella nuova e disinstalla questa.
+
 # Critica fotografica per ChatGPT
 
 Un protocollo di istruzioni per un GPT personalizzato per ChatGPT e CLAUDE, che produce su una fotografia una lettura critica strutturata: tecnica, geometrica, compositiva, narrativa, artistica e poetica. Con riferimenti motivati ai fotografi del Novecento, un piano di post produzione operativo e indicazioni concrete per lo scatto successivo.
